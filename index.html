@@ -10,19 +10,13 @@
 </head>
 
 <body>
-   <header>
+   <header id = "mainHeading">
       <h1>Hi, I'm Timothy McDermott</h1>
       <p>Pursing my path as a full-stack develper.</p>
    </header>
    
-   <!-- <nav class="topnav">
-      <a class="active" href="#home">home</a>
-      <a href="#education">education</a>
-      <a href="#tomorrow">tomorrow</a>
-      <a href="#contact">contact</a>
-   </nav> -->
 <nav class = "tab">
-   <button class="tablink" onclick="openPage('home', this, 'red', 'img/mySelfie.jpeg')">home</button>
+   <button class="tablink" onclick="openPage('home', this, 'red', 'img/mySelfie.jpeg')" id="defaultOpen">home</button>
    <button class="tablink" onclick="openPage('education', this, 'green', 'img/mySelfie.jpeg')">education</button>
    <button class="tablink" onclick="openPage('tomorrow', this, 'blue', 'img/mySelfie.jpeg')">tomorrow</button>
    <button class="tablink" onclick="openPage('contact', this, 'orange', 'img/mySelfie.jpeg')">contact</button>
@@ -30,7 +24,7 @@
 
    <main class="background-container">
       <section id="home" class="tabcontent">
-         <h2>home</h2>
+         <h2 class = "content">home</h2>
          <p>My passion for learning and passing it on still pushes me forward as I turn from the humanities towards web
             development.</p>
          <ul>What excites me about web development is:
@@ -41,7 +35,7 @@
       </section>
 
       <section id="education" class="tabcontent">
-         <h2>education</h2>
+         <h2 class = "content">education</h2>
          <ul>
             <li><a href="https://www.launchcode.org">Launchcode</a> -- a web development bootcamp, which equiped me with
                JavaScript and Java, along with projects and a network into fullstack development.</li>
@@ -58,7 +52,7 @@
       </section>
 
       <section id="tomorrow" class="tabcontent">
-         <h2>tomorrow</h2>
+         <h2 class = "content">tomorrow</h2>
          <ul>As I complete LaunchCode's program, I will...
             <li>
                <article>complete #100DaysOfCode, a supportive coding community striving to create a coding habit
@@ -72,8 +66,9 @@
       </section>
 
       <section id="contact" class="tabcontent">
-         <h2>contact</h2>
-         <p>contact me via <a href="https://www.linkedin.com/in/timothy-mcdermott-b92a1625b/">linkedin</a></p>
+         <h2 class = "content">contact</h2>
+         <p id = "testP" class = "funParagraph">contact me via <a href="https://www.linkedin.com/in/timothy-mcdermott-b92a1625b/">linkedin</a></p>
+         <img src="img/IMG_0359.jpeg" alt="Avatar" class="avatar">
       </section>
 
 
@@ -81,6 +76,9 @@
          &lt;&lt;&lt; &copy; Timothy McDermott &gt;&gt;&gt;
       </footer>
    </main>
+   <script>
+       document.getElementById("defaultOpen").click();
+   </script>
 </body>
 
 </html>

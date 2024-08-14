@@ -1,11 +1,25 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 8px;
+  display: block;
+}
+
+.funParagraph {
+  color: green;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  height: 40px;
 }
 
 .tab button {
@@ -14,9 +28,11 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 8px 10px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 16px;
+  height: 100%;
+
 }
 
 .tab button:hover {
@@ -35,8 +51,9 @@ body {
   background-size: cover;
   background-position: center;
   color: white; /* Adjust text color for better readability */
-  min-height: 80vh;
+  min-height: 25vh;
   margin: 0;
+  
 }
 
 .tabcontent h2, .tabcontent ul, .tabcontent p {
@@ -53,4 +70,14 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay for better text readability */
   z-index: 0;
+  width: 200px 200px;
+  
+}
+
+#mainHeading {
+  color: red;
+}
+
+header {
+  margin-bottom: 0; 
 }

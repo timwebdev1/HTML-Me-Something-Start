@@ -1,5 +1,6 @@
 function openPage(pageName, elmnt, color, imageUrl) {
   // Hide all elements with class="tabcontent" by default
+ 
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {

@@ -1,5 +1,5 @@
 function openPage(pageName, elmnt, color, imageUrl) {
-  // Hide all elements with class="tabcontent" by default */
+  // Hide all elements with class="tabcontent" by default
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -13,7 +13,6 @@ function openPage(pageName, elmnt, color, imageUrl) {
   }
 
   // Show the specific tab content and set its background image
-  // document.getElementById(pageName).style.display = "block";
   const tab = document.getElementById(pageName);
   tab.style.display = "block";
   tab.style.backgroundImage = `url(${imageUrl})`;

@@ -1,36 +1,56 @@
-/* Write your CSS here! */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
+body {
+  font-family: Arial, sans-serif;
 }
 
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
+  transition: 0.3s;
   font-size: 17px;
-  width: 25%;
 }
 
-.tablink:hover {
-  background-color: #777;
+.tab button:hover {
+  background-color: #ddd;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
+.tab button.active {
+  background-color: #ccc;
+}
+
 .tabcontent {
-  color: white;
   display: none;
-  padding: 100px 20px;
-  height: 100%;
+  padding: 20px;
+  position: relative;
+  background-image: url('img/mySelfie.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white; /* Adjust text color for better readability */
+  min-height: 80vh;
+  margin: 0;
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+.tabcontent h2, .tabcontent ul, .tabcontent p {
+  position: relative;
+  z-index: 1;
+}
+
+.tabcontent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay for better text readability */
+  z-index: 0;
+}

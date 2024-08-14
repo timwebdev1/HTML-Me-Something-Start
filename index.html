@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js"></script>
    <title>My Trek into Tech</title>
 </head>
 
@@ -11,7 +13,7 @@
       <h1>Hi, I'm Timothy McDermott</h1>
       <p>Pursing my path as a full-stack develper.</p>
 
-      <nav>
+      <!-- <nav>
          <ul>
             <li> <a href="#home">home</a></li>
             <li> <a href="#education">education</a></li>
@@ -19,10 +21,15 @@
             <li> <a href="#contact">contact</a></li>
          </ul>
       </nav>
-   </header>
+   </header> -->
+
+   <button class="tablink" onclick="openPage('home', this, 'red', 'path/to/mySelfie.jpg')">home</button>
+   <button class="tablink" onclick="openPage('education', this, 'green', 'path/to/mySelfie.jpg')">education</button>
+   <button class="tablink" onclick="openPage('tomorrow', this, 'blue')">tomorrow</button>
+   <button class="tablink" onclick="openPage('contact', this, 'orange')">contact</button>
 
    <main>
-<section id="home">
+<section id="home" class="tabcontent">
    <img src="img/mySelfie.jpeg" alt="A selfie">
    <h2>home</h2>
    <p>My passion for learning and passing it on still pushes me forward as I turn from the humanities towards web development.</p>
@@ -33,7 +40,8 @@
    </ul>
 </section>
 
-<section id="education">
+<section id="education" class="tabcontent">
+   <img src="img/mySelfie.jpeg" alt="A selfie">
    <h2>education</h2>
    <ul>
       <li><a href="https://www.launchcode.org">Launchcode</a> -- a web development bootcamp, which equiped me with JavaScript and Java, along with projects and a network into fullstack development.</li>
@@ -44,10 +52,11 @@
    </ul>
 </section>
 
-<section id="tomorrow">
+<section id="tomorrow" class="tabcontent">
+   <img src="img/mySelfie.jpeg" alt="A selfie">
    <h2>tomorrow</h2>
    <ul>As I complete LaunchCode's program, I will...
-      <li>complete #100 days of code</li>
+      <li><article>complete #100DaysOfCode, a supportive coding community striving to create a coding habit</article></li>
       <li>build 30 JavaScript projects with Wes Bos</li>
       <li>pursue freelance work that will allow me to learn and grow</li>
       <li>obtain an internship with a tech company</li>
@@ -55,7 +64,8 @@
 
 </section>
 
-<section id="contact">
+<section id="contact" class="tabcontent">
+   <img src="img/mySelfie.jpeg" alt="A selfie">
    <h2>contact</h2>
    <p>contact me via <a href="https://www.linkedin.com/in/timothy-mcdermott-b92a1625b/">linkedin</a></p>
 </section>
